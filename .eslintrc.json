@@ -1,0 +1,29 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": "off",
+    "import/prefer-default-export": "off",
+    "no-undef": "off",
+    "max-len": "off",
+    "no-mixed-operators": "off",
+    "import/extensions": "off",
+    "camelcase": "off"
+    }
+}

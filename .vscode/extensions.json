@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "rvest.vs-code-prettier-eslint",
+    "schroeter.prettier-vscode-space-parenthesis",
+    "esbenp.prettier-vscode"
+  ]
+}
