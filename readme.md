@@ -1,8 +1,14 @@
 # My Store Simple API
 
 
+ <h1 align = center>
+    <img src="src/assets/projetoStore.png">
+</h1>
 
-![image](https://user-images.githubusercontent.com/20469909/41728185-5a3e2380-75a0-11e8-8356-fc0a810934eb.png)
+
+ <h1 align = center>
+    <img src="src/assets/loja.png">
+</h1>
 
 ## Description
   - This is a simpli store api, that I Build to learn about Designe Patterns S.O.L.I.D
@@ -17,6 +23,10 @@
 * Delete product
 * Update product
 
+
+ <h1 align = center>
+    <img src="src/assets/LojaCriada.png>
+</h1>
 
 ## Tech
 * JWT
