@@ -1,6 +1,5 @@
 # My Store Simple API
 
-## Preview
  <h1 align = center>
     <img src="src/assets/projetoStore.png">
 </h1>
@@ -11,9 +10,7 @@
 </h1>
 
 
- <h1 align = center>
-    <img src="src/assets/LojaCriada.png>
-</h1>
+
               
               
 ## Description
