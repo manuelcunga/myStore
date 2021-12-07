@@ -1,6 +1,6 @@
 # My Store Simple API
 
-
+## Preview
  <h1 align = center>
     <img src="src/assets/projetoStore.png">
 </h1>
@@ -10,6 +10,12 @@
     <img src="src/assets/loja.png">
 </h1>
 
+
+ <h1 align = center>
+    <img src="src/assets/LojaCriada.png>
+</h1>
+              
+              
 ## Description
   - This is a simpli store api, that I Build to learn about Designe Patterns S.O.L.I.D
 
@@ -24,9 +30,7 @@
 * Update product
 
 
- <h1 align = center>
-    <img src="src/assets/LojaCriada.png>
-</h1>
+
 
 ## Tech
 * JWT
