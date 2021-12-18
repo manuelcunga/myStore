@@ -1,5 +1,5 @@
 import { inject, injectable } from 'tsyringe'
-import { IProductsRepository } from '../../repositories/IProdutsRepository'
+import { IProductsRepository } from '../../repositories/IProductsRepository'
 
 interface IResponse{
   product:{
@@ -12,14 +12,14 @@ interface IResponse{
 }
 
 @injectable()
-export class ListProdutByUserUseCases {
+export class ListProductByUserUseCases {
   constructor (
     @inject('ProductsRepository')
-    private produtUseCases: IProductsRepository
+    private productUseCases: IProductsRepository
   ) {}
 
   async execute (id: string):Promise<IResponse> {
-    const findUser = await this.produtUseCases.findById(id)
+    const findUser = await this.productUseCases.findById(id)
 
     const productUserPost: IResponse = {
 

@@ -1,8 +1,8 @@
 import { inject, injectable } from 'tsyringe'
 import { AppError } from '../../../../shared/infra/http/error/AppError'
-import { ICreateProductDTO } from '../../dtos/IProdutsDTO'
-import { produts } from '../../entities/produts'
-import { IProductsRepository } from '../../repositories/IProdutsRepository'
+import { ICreateProductDTO } from '../../dtos/IProductsDTO'
+import { products } from '../../entities/products'
+import { IProductsRepository } from '../../repositories/IProductsRepository'
 
 @injectable()
 export class CreateProductsUseCases {
@@ -17,7 +17,7 @@ export class CreateProductsUseCases {
     price,
     description,
     user_send
-  }:ICreateProductDTO):Promise<produts> {
+  }:ICreateProductDTO):Promise<products> {
     const alreadyProducts = await this.productsRepository.finByTitle(title)
 
     if (alreadyProducts) {

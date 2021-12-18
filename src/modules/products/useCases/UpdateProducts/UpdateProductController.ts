@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { container } from 'tsyringe'
-import { UpdateProductUseCases } from './UpDateProdutUseCases'
+import { UpdateProductUseCases } from './UpDateProductUseCases'
 
 export class UpDateProductController {
   async handle (request:Request, response:Response):Promise<Response> {
