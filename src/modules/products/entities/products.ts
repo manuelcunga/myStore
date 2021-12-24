@@ -1,8 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from 'typeorm'
 import { v4 as uuidv4 } from 'uuid'
 
-@Entity('produts')
-export class produts {
+@Entity('products')
+export class products {
   @PrimaryColumn()
   readonly id: string
 

@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { products } from './produts.routes'
+import { products } from './products.routes'
 import { authenticateRoutes } from './session.routes'
 import { usersRouter } from './user.routes'
 

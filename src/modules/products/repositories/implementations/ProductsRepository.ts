@@ -1,13 +1,13 @@
 import { getRepository, Repository } from 'typeorm'
-import { ICreateProductDTO } from '../../dtos/IProdutsDTO'
-import { produts } from '../../entities/produts'
-import { IProductsRepository } from '../IProdutsRepository'
+import { ICreateProductDTO } from '../../dtos/IProductsDTO'
+import { products } from '../../entities/products'
+import { IProductsRepository } from '../IProductsRepository'
 
 export class ProductsRepository implements IProductsRepository {
-  private repository: Repository<produts>
+  private repository: Repository<products>
 
   constructor () {
-    this.repository = getRepository(produts)
+    this.repository = getRepository(products)
   }
 
   async create ({
@@ -16,7 +16,7 @@ export class ProductsRepository implements IProductsRepository {
     price,
     description,
     user_send
-  }: ICreateProductDTO): Promise<produts> {
+  }: ICreateProductDTO): Promise<products> {
     const products = this.repository.create({
       title,
       quantity,
@@ -29,7 +29,7 @@ export class ProductsRepository implements IProductsRepository {
     return products
   }
 
-  async finByTitle (title: string): Promise<produts> {
+  async finByTitle (title: string): Promise<products> {
     const result = await this.repository.findOne({ title })
     return result
   }
@@ -38,7 +38,7 @@ export class ProductsRepository implements IProductsRepository {
     await this.repository.delete({ id })
   }
 
-  async findById (id: string): Promise<produts> {
+  async findById (id: string): Promise<products> {
     const result = await this.repository.findOne(id)
     return result
   }
@@ -52,7 +52,7 @@ export class ProductsRepository implements IProductsRepository {
       user_send
     }: ICreateProductDTO
   ): Promise<void> {
-    const produts = this.repository.create({
+    const products = this.repository.create({
       title,
       quantity,
       price,
@@ -60,6 +60,6 @@ export class ProductsRepository implements IProductsRepository {
       user_send
     })
 
-    await this.repository.save(produts)
+    await this.repository.save(products)
   }
 }

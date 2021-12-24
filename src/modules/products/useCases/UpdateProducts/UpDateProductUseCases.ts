@@ -1,6 +1,6 @@
 import { inject, injectable } from 'tsyringe'
-import { ICreateProductDTO } from '../../dtos/IProdutsDTO'
-import { IProductsRepository } from '../../repositories/IProdutsRepository'
+import { ICreateProductDTO } from '../../dtos/IProductsDTO'
+import { IProductsRepository } from '../../repositories/IProductsRepository'
 
 @injectable()
 export class UpdateProductUseCases {
